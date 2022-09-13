@@ -9,8 +9,8 @@ AIUtil.FindTextBlock("REGISTRATION").CheckExists True
 AIUtil.FindTextBlock("REGISTRATION").Click
 AIUtil("text_box", "First Name").Type "Default_name"
 AIUtil("text_box", "Last Name").Type "Default_lastname"
-AIUtil("text_box", "Email").Type "defaultname1222xyz@gmail.com"
-AIUtil("text_box", "User Name").Type "defaultusername1222234xyz"
+AIUtil("text_box", "Email").Type "defaultname789xyz@gmail.com"
+AIUtil("text_box", "User Name").Type "defaultusername789"
 AIUtil("text_box", "Password").Type "DefaultPasword@12234"
 AIUtil("text_box", "Confirm Password").Type "DefaultPasword@12234"
 AIUtil("button", "", micFromTop, 1).CheckExists True ''' the script checks if the registration button is present or not'''
