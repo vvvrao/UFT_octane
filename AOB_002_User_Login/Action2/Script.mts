@@ -1,6 +1,7 @@
 ﻿ ''' The following script validates if users can log-in on AOB ''' 
 AIUtil.SetContext Browser("creationtime:=0")
-If Browser("name:=Home - Advantage Bank").Page("title:=Home - Advantage Bank").WebButton("class:=sc-bdfBQB knKGBR btn btn-primary","html tag:=BUTTON","value:=Open").Exist Then 
+If Browser("name:=Home - Advantage Bank").Page("title:=Home - Advantage Bank").WebButton("class:=sc-bdfBQB knKGBR btn btn-primary","html tag:=BUTTON","value:=Open").Exist Then
+	Wait(3)
 	AIUtil("button", "OPEN").Click
 ''' To validate if user has been moved successfully on the registration portal the script validates the bank logo present'''
 else 
