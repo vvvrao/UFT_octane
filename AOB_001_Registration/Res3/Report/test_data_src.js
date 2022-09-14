@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\AOB_Automation\\Test_Scripts\\AOB_001_Registration\\Res3',namePairs:[]}]};
