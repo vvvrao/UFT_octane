@@ -4,11 +4,12 @@ If Browser("name:=Home - Advantage Bank").Page("title:=Home - Advantage Bank").W
 	AIUtil("button", "OPEN").Click
 ''' To validate if user has been moved successfully on the registration portal the script validates the bank logo present'''
 else 
-	AIUtil.FindTextBlock("LOGIN").Click
+	'AIUtil.FindTextBlock("LOGIN").Click
 	AIUtil("text_box", "User Name").Type "defaultusername1234xyz"
 	AIUtil("text_box", "Password").Type "DefaultPasword@1234"
-	AIUtil("button", "", micFromTop, 1).Click
-	AIUtil.FindTextBlock("advantage Bank").CheckExists True
+	'AIUtil("button", "", micFromTop, 1).Click
+	AIUtil("button", "SIGN-IN").Click
+	'AIUtil.FindTextBlock("advantage Bank").CheckExists True
 End If
 ''' To validate if user can navigate to Accounts page in order to create new account '''
 'AIUtil.FindTextBlock("Accounts").CheckExists True
